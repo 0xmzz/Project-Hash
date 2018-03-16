@@ -1,9 +1,11 @@
 package main
 
-import ("fmt"
-        "crypto/sha256")
+import (
+	"crypto/sha256"
+	"fmt"
+)
 
 func main() {
-  sum := sha256.Sum256([]byte("a"))
+	sum := sha256.Sum256([]byte("a"))
 	fmt.Printf("%x", sum)
 }
